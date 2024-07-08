@@ -1,21 +1,28 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './';
 
 function Navbar() {
   const olStyles = {
-    display: "flex",
-    flexDirection: "column",
-    gap: "5px",
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '5px',
+    // width: '30px',
+    // height: '30px',
+    // borderRadius: '50%',
+    // backgroundColor: 'blue',
+    // color: 'red',
   };
 
   const homeStyles = {
-    backgroundColor: "blue",
-    width: "fit-content",
-    color: "red",
-    position: "fixed",
-    top: "40px",
-    right: "20px",
+    backgroundColor: 'blue',
+    width: 'fit-content',
+    color: 'red',
+    position: 'fixed',
+    top: '40px',
+    right: '20px',
+    padding: '10px',
+    borderRadius: '8px',
   };
 
   return (
@@ -23,7 +30,13 @@ function Navbar() {
       <ol style={olStyles}>
         <li style={homeStyles}>
           <Link to="/">
-            <span style={{ color: "white" }}>Home</span>
+            <span
+              style={{
+                color: 'white',
+              }}
+            >
+              Home
+            </span>
           </Link>
         </li>
         <li>

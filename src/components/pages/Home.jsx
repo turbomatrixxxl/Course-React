@@ -1,6 +1,17 @@
-import React from "react";
+import React from 'react';
 
 function Home() {
-  return <p>Hello React !</p>;
+  return (
+    <h1
+      style={{
+        textAlign: 'center',
+        background: 'green',
+        padding: '30px',
+        color: 'lightgray',
+      }}
+    >
+      Hello React !
+    </h1>
+  );
 }
 export default Home;
