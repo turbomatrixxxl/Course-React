@@ -49,7 +49,7 @@ function Navbar() {
           <Link to="/lesson3">Events și state</Link>
         </li>
         <li>
-          <Link to="/lesson4">Lesson4</Link>
+          <Link to="/lesson4">Forms</Link>
         </li>
         <li>
           <Link to="/lesson5">LifecycleLifecycle</Link>
