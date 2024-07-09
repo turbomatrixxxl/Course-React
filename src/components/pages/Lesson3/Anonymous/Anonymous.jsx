@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Counter extends Component {
+class Anonymous extends Component {
   static defaultProps = {
     step: 1,
     value: 0,
@@ -28,8 +28,9 @@ class Counter extends Component {
             fontSize: '20px',
           }}
           type="button"
-          onClick={event => {
-            console.log({ value });
+          onClick={evt => {
+            console.log('Increment button was clicked!', evt); // funcționează
+            console.log('this.props: ', this.props); // funcționează
           }}
         >
           Increment by {step}
@@ -42,6 +43,10 @@ class Counter extends Component {
             fontSize: '20px',
           }}
           type="button"
+          onClick={evt => {
+            console.log('Decrement button was clicked!', evt); // funcționează
+            console.log('this.props: ', this.props); // funcționează
+          }}
         >
           Decrement by {step}
         </button>
@@ -50,4 +55,4 @@ class Counter extends Component {
   }
 }
 
-export default Counter;
+export default Anonymous;

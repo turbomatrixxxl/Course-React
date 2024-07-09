@@ -1,23 +1,38 @@
 import React, { Component } from 'react';
 
-class Counter extends Component {
+class CounterFinal extends Component {
   static defaultProps = {
     step: 1,
-    value: 0,
+    initialValue: 0,
+  };
+
+  state = {
+    value: this.props.initialValue,
+  };
+
+  handleIncrement = () => {
+    this.setState((state, props) => ({
+      value: state.value + props.step,
+    }));
+  };
+
+  handleDecrement = () => {
+    this.setState((state, props) => ({
+      value: state.value - props.step,
+    }));
   };
 
   render() {
     const { step } = this.props;
-    const { value } = this.props;
 
     return (
-      <div style={{ display: 'flex', gap: '5px' }}>
+      <div style={{ display: 'flex', gap: '5px', alignItems: 'center' }}>
         <span
           style={{
             marginRight: '10px',
           }}
         >
-          {value - step}
+          {this.state.value}
         </span>
         <button
           style={{
@@ -28,9 +43,7 @@ class Counter extends Component {
             fontSize: '20px',
           }}
           type="button"
-          onClick={event => {
-            console.log({ value });
-          }}
+          onClick={this.handleIncrement}
         >
           Increment by {step}
         </button>
@@ -42,6 +55,7 @@ class Counter extends Component {
             fontSize: '20px',
           }}
           type="button"
+          onClick={this.handleDecrement}
         >
           Decrement by {step}
         </button>
@@ -50,4 +64,4 @@ class Counter extends Component {
   }
 }
 
-export default Counter;
+export default CounterFinal;

@@ -1,23 +1,36 @@
 import React, { Component } from 'react';
 
-class Counter extends Component {
+class InitialStateSimplifyed extends Component {
   static defaultProps = {
     step: 1,
-    value: 0,
+    initialValue: 0,
+  };
+
+  state = {
+    value: this.props.initialValue,
+  };
+
+  handleIncrement = evt => {
+    console.log('Increment button was clicked!', evt); // funcționează
+    console.log('this.props: ', this.props); // Error: cannot read props of undefined
+  };
+
+  handleDecrement = evt => {
+    console.log('Decrement button was clicked!', evt); // funcționează
+    console.log('this.props: ', this.props); // Error: cannot read props of undefined
   };
 
   render() {
     const { step } = this.props;
-    const { value } = this.props;
 
     return (
-      <div style={{ display: 'flex', gap: '5px' }}>
+      <div style={{ display: 'flex', gap: '5px', alignItems: 'center' }}>
         <span
           style={{
             marginRight: '10px',
           }}
         >
-          {value - step}
+          {this.state.value}
         </span>
         <button
           style={{
@@ -28,9 +41,7 @@ class Counter extends Component {
             fontSize: '20px',
           }}
           type="button"
-          onClick={event => {
-            console.log({ value });
-          }}
+          onClick={this.handleIncrement}
         >
           Increment by {step}
         </button>
@@ -42,6 +53,7 @@ class Counter extends Component {
             fontSize: '20px',
           }}
           type="button"
+          onClick={this.handleDecrement}
         >
           Decrement by {step}
         </button>
@@ -50,4 +62,4 @@ class Counter extends Component {
   }
 }
 
-export default Counter;
+export default InitialStateSimplifyed;

@@ -52,7 +52,7 @@ function Navbar() {
           <Link to="/lesson4">Lesson4</Link>
         </li>
         <li>
-          <Link to="/lesson5">Lesson5</Link>
+          <Link to="/lesson5">LifecycleLifecycle</Link>
         </li>
         <li>
           <Link to="/lesson6">Lesson6</Link>

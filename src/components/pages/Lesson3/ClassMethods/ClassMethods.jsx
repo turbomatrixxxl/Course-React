@@ -1,10 +1,20 @@
 import React, { Component } from 'react';
 
-class Counter extends Component {
+class ClassMethods extends Component {
   static defaultProps = {
     step: 1,
     value: 0,
   };
+
+  handleIncrement(evt) {
+    console.log('Increment button was clicked!', evt); // funcționează
+    console.log('this.props: ', this.props); // Error: cannot read props of undefined
+  }
+
+  handleDecrement(evt) {
+    console.log('Decrement button was clicked!', evt); // funcționează
+    console.log('this.props: ', this.props); // Error: cannot read props of undefined
+  }
 
   render() {
     const { step } = this.props;
@@ -28,9 +38,7 @@ class Counter extends Component {
             fontSize: '20px',
           }}
           type="button"
-          onClick={event => {
-            console.log({ value });
-          }}
+          onClick={this.handleIncrement}
         >
           Increment by {step}
         </button>
@@ -42,6 +50,7 @@ class Counter extends Component {
             fontSize: '20px',
           }}
           type="button"
+          onClick={this.handleDecrement}
         >
           Decrement by {step}
         </button>
@@ -50,4 +59,4 @@ class Counter extends Component {
   }
 }
 
-export default Counter;
+export default ClassMethods;
