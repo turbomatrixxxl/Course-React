@@ -265,12 +265,18 @@ function Lesson5() {
       <ErrorBoundary />
 
       <h3>Materiale adiționale</h3>
-      <a href="https://legacy.reactjs.org/docs/react-component.html#the-component-lifecycle">
-        Documentation - The component lifecycle
-      </a>
-      <a href="https://legacy.reactjs.org/blog/2017/07/26/error-handling-in-react-16.html">
-        Error Handling in React 16+
-      </a>
+      <ul>
+        <li>
+          <a href="https://legacy.reactjs.org/docs/react-component.html#the-component-lifecycle">
+            Documentation - The component lifecycle
+          </a>
+        </li>
+        <li>
+          <a href="https://legacy.reactjs.org/blog/2017/07/26/error-handling-in-react-16.html">
+            Error Handling in React 16+
+          </a>
+        </li>
+      </ul>
     </div>
   );
 }
