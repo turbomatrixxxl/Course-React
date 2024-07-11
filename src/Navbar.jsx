@@ -55,7 +55,7 @@ function Navbar() {
           <Link to="/lesson5">LifecycleLifecycle</Link>
         </li>
         <li>
-          <Link to="/lesson6">Lesson6</Link>
+          <Link to="/lesson6">Cereri HTTP</Link>
         </li>
         <li>
           <Link to="/lesson7">Lesson7</Link>

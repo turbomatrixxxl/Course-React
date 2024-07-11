@@ -7,6 +7,7 @@ import Lesson2 from './pages/Lesson2/Lesson2';
 import Lesson3 from './pages/Lesson3';
 import Lesson4 from './pages/Lesson4';
 import Lesson5 from './pages/Lesson5';
+import Lesson6 from './pages/Lesson6';
 import NoPage from './pages/NoPages';
 import logo from '../logo.svg';
 import './App.css';
@@ -44,6 +45,7 @@ function App() {
               <Route path="lesson3" element={<Lesson3 />} />
               <Route path="lesson4" element={<Lesson4 />} />
               <Route path="lesson5" element={<Lesson5 />} />
+              <Route path="lesson6" element={<Lesson6 />} />
               <Route path="*" element={<NoPage />} />
             </Route>
           </Routes>

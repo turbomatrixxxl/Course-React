@@ -1,0 +1,76 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+input ~ label {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  gap: 5px;
+}
+
+.labelCheck {
+  display: flex;
+  font-size: 16px;
+  gap: 5px;
+}
+
+.ageSelect {
+  background-color: pink;
+  color: brown;
+  font-size: 24px;
+}
+
+.input {
+  border: 1px solid #757575;
+  color: #757575;
+  display: block;
+  font-size: 24px;
+  padding: 20px;
+  width: -webkit-fill-available;
+}
+
+.input:focus {
+  border: 2px solid #424242;
+  outline: none;
+  /* padding: 12px 24px; */
+}
+
+.password {
+  color: red;
+}
+
+.radioLabel,
+.ageLabel {
+  align-items: center;
+  display: flex;
+  font-size: 24px;
+  gap: 10px;
+}
+
+.submitButton {
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.submitButton:hover {
+  background-color: yellowgreen;
+}
+
+.submitButton:valid {
+  background-color: green;
+}
+
+.requiredIcon {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: #e53935;
+}
