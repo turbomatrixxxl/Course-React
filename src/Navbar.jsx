@@ -58,7 +58,7 @@ function Navbar() {
           <Link to="/lesson6">Cereri HTTP</Link>
         </li>
         <li>
-          <Link to="/lesson7">Lesson7</Link>
+          <Link to="/lesson7">React hooks</Link>
         </li>
         <li>
           <Link to="/lesson8">Lesson8</Link>

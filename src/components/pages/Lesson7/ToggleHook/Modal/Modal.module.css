@@ -1,0 +1,40 @@
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  background: rgba(1, 1, 1, 0.8);
+  justify-content: center;
+  z-index: 200;
+}
+
+.modalClassName {
+  background-color: white;
+  border: solid;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+  padding: 1em;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.button {
+  background-color: blue;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  height: fit-content;
+  padding: 4px 10px;
+}
+
+.button:hover {
+  background-color: green;
+}

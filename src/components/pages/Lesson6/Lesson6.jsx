@@ -3,7 +3,7 @@ import HttpSimpleReq from './HttpSimpleReq';
 import HttpErrLoading from './HttpErrLoading';
 import HttpLoading from './HttpLoading';
 import HttpErr from './HttpErr';
-// import HttpApiService from './HttpApiService';
+import HttpApiService from './HttpApiService';
 
 function Lesson6() {
   return (
@@ -122,7 +122,7 @@ function Lesson6() {
       </p>
       <p>Importăm serviciul în fișierul componentei și apelăm metoda dorită.</p>
 
-      {/* <HttpApiService /> */}
+      <HttpApiService />
 
       <h2 style={{ color: 'red' }}>Nu Merge !!!</h2>
     </div>

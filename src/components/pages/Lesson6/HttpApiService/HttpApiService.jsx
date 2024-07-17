@@ -45,7 +45,7 @@ class HttpApiService extends Component {
     return (
       <div>
         {error && <p>{error}</p>}
-        {isLoading && <p>Loading HttpErr...</p>}
+        {isLoading && <p>Loading HttpApiService...</p>}
         {articles.length > 0 && <ArticleList articles={articles} />}
       </div>
     );
