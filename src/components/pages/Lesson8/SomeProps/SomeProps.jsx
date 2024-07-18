@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import styles from './SomeProps.module.css';
 
 export default function SomeProps({ someProp }) {
-  const [planets, setPlanets] = useState(['Earth', 'Mars', 'Jupiter', 'Venus']);
-  const [query, setQuery] = useState('');
+  const planets = ['Earth', 'Mars', 'Jupiter', 'Venus'];
+  const query = '';
   const [clicks, setClicks] = useState(0);
 
   const filteredPlanets = planets.filter(planet => planet.includes(query));

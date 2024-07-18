@@ -2,9 +2,9 @@ import React, { useMemo, useState } from 'react';
 
 import styles from './SomePropsMemo.module.css';
 
-export default function SomePropsMemo({ someProp }) {
-  const [planets, setPlanets] = useState(['Earth', 'Mars', 'Jupiter', 'Venus']);
-  const [query, setQuery] = useState('');
+export default function SomePropsMemo({ someProp, planets }) {
+  planets = ['Earth', 'Mars', 'Jupiter', 'Venus'];
+  const query = '';
   const [clicks, setClicks] = useState(0);
 
   const filteredPlanets = useMemo(
@@ -28,7 +28,3 @@ export default function SomePropsMemo({ someProp }) {
     </div>
   );
 }
-
-const App = ({ someProp }) => {
-  return <div></div>;
-};
