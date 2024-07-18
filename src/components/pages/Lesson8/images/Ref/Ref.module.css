@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  gap: 5px;
+}
+
+.span {
+  background-color: palevioletred;
+  border-radius: 4px;
+  color: white;
+  font-size: 24px;
+  padding: 4px 8px;
+}
+
+.button {
+  background-color: blue;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  height: fit-content;
+  padding: 4px 10px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: green;
+}

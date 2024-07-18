@@ -61,7 +61,7 @@ function Navbar() {
           <Link to="/lesson7">React hooks</Link>
         </li>
         <li>
-          <Link to="/lesson8">Lesson8</Link>
+          <Link to="/lesson8">React hooks 2</Link>
         </li>
         <li>
           <Link to="/lesson9">Lesson9</Link>
