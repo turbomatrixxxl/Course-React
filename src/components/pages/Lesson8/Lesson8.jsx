@@ -17,7 +17,7 @@ import image13 from './images/image13.png';
 import styles from './Lesson8.module.css';
 import { UserMenu } from './UserContext/userMenu';
 import { UserProvider } from './UserContext/userContext';
-import Ref from './images/Ref';
+import Ref from './Ref';
 import MissingReact from './MissingReact';
 import Player from './Player';
 import ForwardRef from './ForwardRef';

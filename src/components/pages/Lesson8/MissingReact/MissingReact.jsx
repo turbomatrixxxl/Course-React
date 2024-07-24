@@ -3,13 +3,13 @@ import { useEffect, useRef } from 'react';
 import styles from './MissingReact.module.css';
 
 export const MissingReact = () => {
-  const valueRef = useRef(0);
+  const valueRef = useRef(1);
 
   useEffect(() => {
     // Se execută o singură dată la montare.
     // Actualizările ulterioare ale valorii ref nu vor face componenta să fie actualizată.
     console.log(valueRef.current);
-  });
+  }, []);
 
   const handleClick = () => {
     valueRef.current += 1;
