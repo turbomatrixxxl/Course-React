@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Course-React/static/css/main.d9eb764e.css",
-    "main.js": "/Course-React/static/js/main.1a03509a.js",
+    "main.css": "/Course-React/static/css/main.ef7ca748.css",
+    "main.js": "/Course-React/static/js/main.70e8fa46.js",
     "static/media/image4.png": "/Course-React/static/media/image4.f54f9a9f3cc4779f51a9.png",
     "static/media/image7.png": "/Course-React/static/media/image7.a2025ed09a95659a2592.png",
     "static/media/image1.png": "/Course-React/static/media/image1.902d062ef6ab5b370494.png",
@@ -17,11 +17,11 @@
     "static/media/image9.png": "/Course-React/static/media/image9.b581f71b1ca5214f6df6.png",
     "static/media/logo.svg": "/Course-React/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Course-React/index.html",
-    "main.d9eb764e.css.map": "/Course-React/static/css/main.d9eb764e.css.map",
-    "main.1a03509a.js.map": "/Course-React/static/js/main.1a03509a.js.map"
+    "main.ef7ca748.css.map": "/Course-React/static/css/main.ef7ca748.css.map",
+    "main.70e8fa46.js.map": "/Course-React/static/js/main.70e8fa46.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9eb764e.css",
-    "static/js/main.1a03509a.js"
+    "static/css/main.ef7ca748.css",
+    "static/js/main.70e8fa46.js"
   ]
 }
