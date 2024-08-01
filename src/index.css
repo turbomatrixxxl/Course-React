@@ -23,3 +23,12 @@ img {
 /* ol {
   list-style-type: decimal-leading-zero;
 } */
+
+a {
+  color: blue;
+}
+
+a:hover,
+a:focus {
+  color: brown;
+}
