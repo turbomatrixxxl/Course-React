@@ -10,10 +10,12 @@ import Lesson5 from './pages/Lesson5';
 import Lesson6 from './pages/Lesson6';
 import Lesson7 from './pages/Lesson7';
 import Lesson8 from './pages/Lesson8';
+import Lesson9 from './pages/Lesson9';
 
 import NoPage from './pages/NoPages';
 import logo from '../logo.svg';
 import './App.css';
+// import { RouteExample } from './pages/Lesson9/RouteExample/RouteExample';
 
 function App() {
   const mainStyles = {
@@ -41,18 +43,18 @@ function App() {
       <main style={mainStyles}>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Layout />}>
-              <Route index element={<Home />} />
-              <Route path="lesson1" element={<Lesson1 />} />
-              <Route path="lesson2" element={<Lesson2 />} />
-              <Route path="lesson3" element={<Lesson3 />} />
-              <Route path="lesson4" element={<Lesson4 />} />
-              <Route path="lesson5" element={<Lesson5 />} />
-              <Route path="lesson6" element={<Lesson6 />} />
-              <Route path="lesson7" element={<Lesson7 />} />
-              <Route path="lesson8" element={<Lesson8 />} />
-              <Route path="*" element={<NoPage />} />
-            </Route>
+            <Route path="/" element={<Layout />} />
+            <Route index element={<Home />} />
+            <Route path="lesson1" element={<Lesson1 />} />
+            <Route path="lesson2" element={<Lesson2 />} />
+            <Route path="lesson3" element={<Lesson3 />} />
+            <Route path="lesson4" element={<Lesson4 />} />
+            <Route path="lesson5" element={<Lesson5 />} />
+            <Route path="lesson6" element={<Lesson6 />} />
+            <Route path="lesson7" element={<Lesson7 />} />
+            <Route path="lesson8" element={<Lesson8 />} />
+            <Route path="lesson9" element={<Lesson9 />} />
+            <Route path="*" element={<NoPage />} />
           </Routes>
         </BrowserRouter>
       </main>
