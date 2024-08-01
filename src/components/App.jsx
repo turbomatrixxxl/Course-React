@@ -1,7 +1,10 @@
 import React from 'react';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+
 import Layout from './pages/Layout';
 import Home from './pages/Home';
+import NoPage from './pages/NoPages';
+
 import Lesson1 from './pages/Lesson1/Lesson1';
 import Lesson2 from './pages/Lesson2/Lesson2';
 import Lesson3 from './pages/Lesson3';
@@ -12,19 +15,17 @@ import Lesson7 from './pages/Lesson7';
 import Lesson8 from './pages/Lesson8';
 import Lesson9 from './pages/Lesson9';
 
-import NoPage from './pages/NoPages';
-
-import logo from '../logo.svg';
-import './App.css';
-
 import { Homes } from './pages/Lesson9/RouteExample/RouterPages/Homes';
 import { About } from './pages/Lesson9/RouteExample/RouterPages/About';
 import { Products } from './pages/Lesson9/RouteExample/RouterPages/Products';
-// import { NotFound } from './pages/Lesson9/RouteExample/RouterPages/NotFound';
+import { NotFound } from './pages/Lesson9/RouteExample/RouterPages/NotFound';
 import { Homess } from './pages/Lesson9/UrlParams/UrlParamsPages/Homess';
 import { Abouts } from './pages/Lesson9/UrlParams/UrlParamsPages/Abouts';
 import { Productss } from './pages/Lesson9/UrlParams/UrlParamsPages/Productss';
 import { ProductDetails } from './pages/Lesson9/UrlParams/UrlParamsPages/ProductDetails';
+
+import logo from '../logo.svg';
+import './App.css';
 
 function App() {
   const mainStyles = {
@@ -62,15 +63,16 @@ function App() {
             <Route path="lesson6" element={<Lesson6 />} />
             <Route path="lesson7" element={<Lesson7 />} />
             <Route path="lesson8" element={<Lesson8 />} />
-            <Route path="/lesson9" element={<Lesson9 />} />
-            <Route path="/home" element={<Homes />} />
-            <Route path="about" element={<About />} />
-            <Route path="products" element={<Products />} />
-            <Route path="/homess" element={<Homess />} />
-            <Route path="/abouts" element={<Abouts />} />
-            <Route path="/productss" element={<Productss />} />
-            <Route path="/productss/:id" element={<ProductDetails />} />
-            {/* <Route path="*" element={<NotFound />} /> */}
+            <Route path="/lesson9" element={<Lesson9 />}>
+              <Route path="/home" element={<Homes />} />
+              <Route path="about" element={<About />} />
+              <Route path="products" element={<Products />} />
+              <Route path="/homess" element={<Homess />} />
+              <Route path="/abouts" element={<Abouts />} />
+              <Route path="/productss" element={<Productss />} />
+              <Route path="/productss/:id" element={<ProductDetails />} />
+              <Route path="*" element={<NotFound />} />
+            </Route>
 
             <Route path="*" element={<NoPage />} />
           </Route>
