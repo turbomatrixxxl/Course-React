@@ -292,14 +292,7 @@ function Lesson9() {
         produselor.
       </p>
 
-      <img
-        // style={{
-        //   width: '100%',
-        //   height: 'fit-content',
-        // }}
-        src={image7}
-        alt="Example"
-      />
+      <img src={image7} alt="Example" />
     </div>
   );
 }

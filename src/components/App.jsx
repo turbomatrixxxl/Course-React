@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Layout from './pages/Layout';
 import Home from './pages/Home';
 import Lesson1 from './pages/Lesson1/Lesson1';
@@ -15,6 +15,7 @@ import Lesson9 from './pages/Lesson9';
 import NoPage from './pages/NoPages';
 import logo from '../logo.svg';
 import './App.css';
+
 // import { RouteExample } from './pages/Lesson9/RouteExample/RouteExample';
 
 function App() {
@@ -41,9 +42,10 @@ function App() {
         </a>
       </header>
       <main style={mainStyles}>
+        {' '}
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Layout />} />
+            <Route path="/Course-React" element={<Layout />} />
             <Route index element={<Home />} />
             <Route path="lesson1" element={<Lesson1 />} />
             <Route path="lesson2" element={<Lesson2 />} />
