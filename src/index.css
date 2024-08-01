@@ -19,3 +19,7 @@ img {
   /* object-fit: cover; */
   width: 50%;
 }
+
+/* ol {
+  list-style-type: decimal-leading-zero;
+} */

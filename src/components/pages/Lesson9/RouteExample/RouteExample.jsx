@@ -1,9 +1,13 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { About } from './RouterPages/About';
+// import { Route, Routes } from 'react-router-dom';
+// import { About } from './RouterPages/About';
 import { Homes } from './RouterPages/Homes';
-import { Products } from './RouterPages/Products';
-import { NotFound } from './RouterPages/NotFound';
+// import { Products } from './RouterPages/Products';
+// import { NotFound } from './RouterPages/NotFound';
 import { Container, Header, Logo, Link } from './RouteExampleComponents';
+import { Outlet } from 'react-router-dom';
+// import { About } from './RouterPages/About';
+// import { Products } from './RouterPages/Products';
+// import { NotFound } from './RouterPages/NotFound';
 
 export const RouteExample = () => {
   return (
@@ -16,21 +20,21 @@ export const RouteExample = () => {
           GoMerch Store
         </Logo>
         <nav>
-          <Link to="/" end>
+          <Link to="/homes" end>
             Home
           </Link>
           <Link to="/about">About</Link>
           <Link to="/products">Products</Link>
         </nav>
       </Header>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Homes />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+      <Homes />
+      {/* <Routes>
+        <Route path="/home" element={<Homes />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes> */}
+      <Outlet />
     </Container>
   );
 };

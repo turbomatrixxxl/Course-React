@@ -1,5 +1,6 @@
 import React from 'react';
-// import { RouteExample } from './RouteExample/RouteExample';
+import { RouteExample } from './RouteExample/RouteExample';
+import { UrlParams } from './UrlParams/UrlParams';
 
 import image1 from './images/image1.png';
 import image2 from './images/image2.png';
@@ -8,6 +9,19 @@ import image4 from './images/image4.png';
 import image5 from './images/image5.png';
 import image6 from './images/image6.png';
 import image7 from './images/image7.png';
+import image8 from './images/image8.png';
+import image9 from './images/image9.png';
+import image10 from './images/image10.png';
+import image11 from './images/image11.png';
+import image12 from './images/image12.png';
+
+// import { Route } from 'react-router-dom';
+// import { Homes } from './RouteExample/RouterPages/Homes';
+// import { About } from './RouteExample/RouterPages/About';
+// import { Products } from './RouteExample/RouterPages/Products';
+// import { NotFound } from './RouteExample/RouterPages/NotFound';
+
+// import { Outlet } from 'react-router-dom';
 
 function Lesson9() {
   return (
@@ -40,7 +54,14 @@ function Lesson9() {
         starea interfeței, trebuie descrisă în URL.
       </p>
 
-      <img src={image1} alt="Example" />
+      <img
+        style={{
+          width: '100%',
+          height: 'fit-content',
+        }}
+        src={image1}
+        alt="Example"
+      />
 
       <p>Să analizăm ce secțiuni poate conține un URL.</p>
       <ul>
@@ -127,7 +148,14 @@ function Lesson9() {
         să acoperim întreaga aplicație cu componenta BrowserRouter.
       </p>
 
-      <img src={image2} alt="Example" />
+      <img
+        style={{
+          width: '100%',
+          height: 'fit-content',
+        }}
+        src={image2}
+        alt="Example"
+      />
 
       <p>
         În continuare ne vom uita la cum se crează rutele unei aplicații web.
@@ -167,7 +195,14 @@ function Lesson9() {
         online de îmbrăcăminte, așa că vom descrie traseele a trei pagini.
       </p>
 
-      <img src={image3} alt="Example" />
+      <img
+        style={{
+          width: '100%',
+          height: 'fit-content',
+        }}
+        src={image3}
+        alt="Example"
+      />
 
       <p>
         Un grup de rute trebuie să fie acoperit de o componentă Routes, chiar
@@ -199,7 +234,14 @@ function Lesson9() {
         rută nu se potrivește.
       </p>
 
-      <img src={image4} alt="Example" />
+      <img
+        style={{
+          width: '100%',
+          height: 'fit-content',
+        }}
+        src={image4}
+        alt="Example"
+      />
 
       <h2>Componentele Link și NavLink</h2>
       <p>
@@ -218,7 +260,14 @@ function Lesson9() {
         browser-ului, fără a da refresh la pagină.
       </p>
 
-      <img src={image5} alt="Example" />
+      <img
+        style={{
+          width: '100%',
+          height: 'fit-content',
+        }}
+        src={image5}
+        alt="Example"
+      />
 
       <p>
         Componenta <b>NavLink</b> diferă doar prin faptul că poate avea stiluri
@@ -243,7 +292,7 @@ function Lesson9() {
         le-am explicat până acum.
       </p>
 
-      {/* <RouteExample /> */}
+      <RouteExample />
 
       <h2>Parametrii unui URL</h2>
       <p>
@@ -292,7 +341,191 @@ function Lesson9() {
         produselor.
       </p>
 
-      <img src={image7} alt="Example" />
+      <img
+        style={{
+          width: '100%',
+          height: 'fit-content',
+        }}
+        src={image7}
+        alt="Example"
+      />
+
+      <p style={{ color: 'red' }}>
+        <b>Unicitatea valorilor</b>
+      </p>
+
+      <p>
+        Valoarea unui parametru URL trebuie să fie unică în cadrul colecției,
+        astfel încât identificatorii de obiect pe care îi stabilește baza de
+        date sunt cel mai frecvent utilizați (numere sau șiruri). Prin urmare,
+        adresa poate arăta astfel: <b>/products/1, /proudcts/2</b> și așa mai
+        departe.
+      </p>
+
+      <h3>useParams hook</h3>
+      <p>
+        Returnează un obiect cu toți parametrii dinamici care se află în adresa
+        URL actuală. Numele parametrului va fi numele proprietății din obiect,
+        iar valoarea sa curentă din adresa URL va fi valoarea proprietății. De
+        exemplu, presupunem că următoarea rută este declarată
+        <b>/books/:genreId/:authorName</b>, iar utilizatorul se află la
+        <b>/books/adventure/herman-melville</b>.
+      </p>
+
+      <p style={{ color: 'red' }}>
+        <b>
+          const &#123;(genreId, authorName)&#125; = useParams(); <br />
+          console.log(genreId, authorName); // adventure, herman-melville
+        </b>
+      </p>
+
+      <p>
+        Pentru a obține valoarea părții dinamice a URL-ului, în cazul nostru va
+        fi id-ul produsului. Folosim hook-ul <b>useParams</b> în componenta care
+        execută render la pagina unui produs.
+      </p>
+
+      <img
+        style={{
+          width: '100%',
+          height: 'fit-content',
+        }}
+        src={image8}
+        alt="Example"
+      />
+
+      <p style={{ color: 'red' }}>
+        <b>Ce urmează?</b>
+      </p>
+
+      <p>
+        Având valoarea parametrului, putem, de exemplu, să facem o solicitare
+        către backend și să obținem informații suplimentare despre produs,
+        folosind id-ul său și apoi vom randa pagina.
+      </p>
+
+      <p>
+        Aruncă o privire la codul live al aplicației noastre pentru crearea unui
+        magazin online care folosește tot materialul pe care l-am acoperit până
+        în acest moment.
+      </p>
+
+      <UrlParams />
+
+      <h2>Rute imbricate</h2>
+      <p>
+        Rutele suprapuse permit să descriem logica «subpaginilor», adică o
+        adresă URL la care, pe lângă componenta părinte a întregii pagini, va fi
+        afișată și o altă componentă copil, suprapusă.
+      </p>
+      <p>
+        De exemplu, avem nevoie de{' '}
+        <b>/about/mission, /about/team și /about/reviews</b>
+        pentru a afișa câteva informații suplimentare, mai specifice, pe lângă
+        conținutul paginii «About us». Să presupunem că acestea sunt componente
+        diferite: un articol despre misiunea companiei noastre, o galerie cu
+        informații despre angajați și recenziile utilizatorilor.
+      </p>
+
+      <img
+        style={{
+          width: '100%',
+          height: 'fit-content',
+        }}
+        src={image9}
+        alt="Example"
+      />
+
+      <p>
+        Dacă descriem rutele astfel, obținem patru pagini independente. La
+        /about va fi afișată doar pagina de informații, iar pe about/team , o
+        galerie cu angajați, dar nu de asta avem nevoie. Folosim sintaxa de
+        declarare a rutelor suprapuse și astfel, componenta va fi afișată în
+        pagina părinte.
+      </p>
+
+      <img
+        style={{
+          width: '100%',
+          height: 'fit-content',
+        }}
+        src={image10}
+        alt="Example"
+      />
+
+      <p>Acordă atenție câtorva aspecte:</p>
+      <ul>
+        <li>
+          Am suprapus declarativ rutele copil în interiorul unei <b>Route</b>{' '}
+          părinte. Această sintaxă indică o rută suprapusă a cărei componentă va
+          fi randată undeva în interiorul componentei părinte.
+        </li>
+        <li>
+          Valoarea prop-ului <b>path</b> în rutele suprapuse este{' '}
+          <b>relativă la părinte</b>, motiv pentru care am scris{' '}
+          <b>path="mission"</b> și nu calea completă
+          <b>path="/about/mission"</b> .
+        </li>
+        <li>
+          Căile relative sunt scrise fără <b>/</b>, adică <b>path="mission"</b>,
+          nu
+          <b>path="/mission"</b>. Dacă adăugăm o bară oblică, vom crea o rută
+          separată
+          <b>/mission</b> și vom întrerupe logica de rutare.
+        </li>
+      </ul>
+      <p>
+        Configurația completă a rutelor din aplicața noastră va arăta astfel:
+      </p>
+
+      <img
+        style={{
+          width: '100%',
+          height: 'fit-content',
+        }}
+        src={image11}
+        alt="Example"
+      />
+
+      <p>
+        Ultimul lucru care trebuie făcut este să specificăm exact unde în ruta
+        părinte About dorim să randăm rutele copii. Pentru a face acest lucru,
+        React Router are componenta Outlet.
+      </p>
+
+      <img
+        style={{
+          width: '100%',
+          height: 'fit-content',
+        }}
+        src={image12}
+        alt="Example"
+      />
+
+      <p>
+        Dacă adresa URL actuală din bara de căutare a browser-ului se potrivește
+        cu path-ul unei rute suprapuse, <b>Outlet</b> va randa componenta sa.
+        Altfel va fi <b>null</b> și nu va avea niciun efect asupra marcajului
+        din componenta părinte.
+      </p>
+
+      <p style={{ color: 'red' }}>
+        <b>Link-uri relative</b>
+      </p>
+
+      <p>
+        Reține valoarea prop-ului <b>to</b> din componenta <b>Link</b>. La fel
+        ca <b>path</b>-ul unei rute suprapuse, valoarea prop-ului <b>to</b> a
+        linkurilor suprapuse este relativă la adresa URL actuală. Componenta{' '}
+        <b>About</b> se randează la adresa
+        <b>/about</b>, deci, un link cu <b>to="mission"</b> va indica{' '}
+        <b>/about/mission</b>. Dacă trebuie să creați un link către o altă
+        pagină, atunci e nevoie să specificăm calea completă. De exemplu,{' '}
+        <b>to="/products"</b>.
+      </p>
+      <p>
+        Aruncă o privire la codul de mai jos pentru crearea unui magazin online.
+      </p>
     </div>
   );
 }
