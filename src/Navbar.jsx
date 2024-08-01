@@ -1,17 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import './';
 
 function Navbar() {
   const olStyles = {
     display: 'flex',
     flexDirection: 'column',
     gap: '5px',
-    // width: '30px',
-    // height: '30px',
-    // borderRadius: '50%',
-    // backgroundColor: 'blue',
-    // color: 'red',
+    color: 'black',
   };
 
   const homeStyles = {
@@ -40,7 +35,7 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <Link to="lesson1">Introducere în React</Link>
+          <Link to="/lesson1">Introducere în React</Link>
         </li>
         <li>
           <Link to="/lesson2">Stilizarea</Link>

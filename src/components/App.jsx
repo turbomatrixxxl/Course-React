@@ -13,14 +13,14 @@ import Lesson8 from './pages/Lesson8';
 import Lesson9 from './pages/Lesson9';
 
 import NoPage from './pages/NoPages';
+
 import logo from '../logo.svg';
 import './App.css';
-// import { RouteExample } from './pages/Lesson9/RouteExample/RouteExample';
 
 import { Homes } from './pages/Lesson9/RouteExample/RouterPages/Homes';
 import { About } from './pages/Lesson9/RouteExample/RouterPages/About';
 import { Products } from './pages/Lesson9/RouteExample/RouterPages/Products';
-import { NotFound } from './pages/Lesson9/RouteExample/RouterPages/NotFound';
+// import { NotFound } from './pages/Lesson9/RouteExample/RouterPages/NotFound';
 import { Homess } from './pages/Lesson9/UrlParams/UrlParamsPages/Homess';
 import { Abouts } from './pages/Lesson9/UrlParams/UrlParamsPages/Abouts';
 import { Productss } from './pages/Lesson9/UrlParams/UrlParamsPages/Productss';
@@ -51,9 +51,8 @@ function App() {
       </header>
       <main style={mainStyles}>
         {' '}
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Layout />} />
+        <Routes>
+          <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="lesson1" element={<Lesson1 />} />
             <Route path="lesson2" element={<Lesson2 />} />
@@ -71,11 +70,11 @@ function App() {
             <Route path="/abouts" element={<Abouts />} />
             <Route path="/productss" element={<Productss />} />
             <Route path="/productss/:id" element={<ProductDetails />} />
-            <Route path="*" element={<NotFound />} />
+            {/* <Route path="*" element={<NotFound />} /> */}
 
             <Route path="*" element={<NoPage />} />
-          </Routes>
-        </BrowserRouter>
+          </Route>
+        </Routes>
       </main>
     </div>
   );
