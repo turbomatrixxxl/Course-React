@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Course-React/static/css/main.8db525bd.css",
-    "main.js": "/Course-React/static/js/main.6a56fea4.js",
+    "main.js": "/Course-React/static/js/main.5e929c06.js",
     "static/media/image4.png": "/Course-React/static/media/image4.f54f9a9f3cc4779f51a9.png",
     "static/media/image7.png": "/Course-React/static/media/image7.a2025ed09a95659a2592.png",
     "static/media/image1.png": "/Course-React/static/media/image1.902d062ef6ab5b370494.png",
@@ -11,17 +11,20 @@
     "static/media/image5.png": "/Course-React/static/media/image5.fa45675cb18c1c837ca8.png",
     "static/media/image8.png": "/Course-React/static/media/image8.7531f3beab234d9d455e.png",
     "static/media/image12.png": "/Course-React/static/media/image12.f705e109984792e5823b.png",
-    "static/media/image13.png": "/Course-React/static/media/image13.b4f9fc8073af885fcd30.png",
+    "static/media/image13.png": "/Course-React/static/media/image13.1162f5ecee3fbf01b20e.png",
     "static/media/image10.png": "/Course-React/static/media/image10.9bf24162c0efa15764da.png",
     "static/media/image11.png": "/Course-React/static/media/image11.48e0de173cf84b03b13d.png",
     "static/media/image9.png": "/Course-React/static/media/image9.871e792413d876670b37.png",
+    "static/media/image16.png": "/Course-React/static/media/image16.986a93ee7055739a7934.png",
+    "static/media/image15.png": "/Course-React/static/media/image15.f0cf18d300c2b8d0d352.png",
+    "static/media/image14.png": "/Course-React/static/media/image14.9534d79841b9bbbc7189.png",
     "static/media/logo.svg": "/Course-React/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Course-React/index.html",
     "main.8db525bd.css.map": "/Course-React/static/css/main.8db525bd.css.map",
-    "main.6a56fea4.js.map": "/Course-React/static/js/main.6a56fea4.js.map"
+    "main.5e929c06.js.map": "/Course-React/static/js/main.5e929c06.js.map"
   },
   "entrypoints": [
     "static/css/main.8db525bd.css",
-    "static/js/main.6a56fea4.js"
+    "static/js/main.5e929c06.js"
   ]
 }
