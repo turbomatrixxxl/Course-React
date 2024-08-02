@@ -14,15 +14,6 @@ import image9 from './images/image9.png';
 import image10 from './images/image10.png';
 import image11 from './images/image11.png';
 import image12 from './images/image12.png';
-import { Link } from 'react-router-dom';
-
-// import { Route } from 'react-router-dom';
-// import { Homes } from './RouteExample/RouterPages/Homes';
-// import { About } from './RouteExample/RouterPages/About';
-// import { Products } from './RouteExample/RouterPages/Products';
-// import { NotFound } from './RouteExample/RouterPages/NotFound';
-
-// import { Outlet } from 'react-router-dom';
 
 function Lesson9() {
   return (
@@ -293,7 +284,7 @@ function Lesson9() {
         le-am explicat până acum.
       </p>
 
-      <Link to="/routeexample">RouteExample</Link>
+      <h4 style={{ color: 'red' }}>RouteExample</h4>
       <RouteExample />
 
       <h2>Parametrii unui URL</h2>
@@ -412,7 +403,7 @@ function Lesson9() {
         în acest moment.
       </p>
 
-      <Link to="/UrlParams">UrlParams</Link>
+      <h4 style={{ color: 'red' }}>UrlParams</h4>
       <UrlParams />
 
       <h2>Rute imbricate</h2>

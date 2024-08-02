@@ -15,19 +15,8 @@ import Lesson7 from './pages/Lesson7';
 import Lesson8 from './pages/Lesson8';
 import Lesson9 from './pages/Lesson9';
 
-import { Homes } from './pages/Lesson9/RouteExample/RouterPages/Homes';
-import { About } from './pages/Lesson9/RouteExample/RouterPages/About';
-import { Products } from './pages/Lesson9/RouteExample/RouterPages/Products';
-import { NotFound } from './pages/Lesson9/RouteExample/RouterPages/NotFound';
-import { Homess } from './pages/Lesson9/UrlParams/UrlParamsPages/Homess';
-import { Abouts } from './pages/Lesson9/UrlParams/UrlParamsPages/Abouts';
-import { Productss } from './pages/Lesson9/UrlParams/UrlParamsPages/Productss';
-import { ProductDetails } from './pages/Lesson9/UrlParams/UrlParamsPages/ProductDetails';
-
 import logo from '../logo.svg';
 import './App.css';
-import { RouteExample } from './pages/Lesson9/RouteExample/RouteExample';
-import { UrlParams } from './pages/Lesson9/UrlParams/UrlParams';
 
 function App() {
   const mainStyles = {
@@ -65,20 +54,7 @@ function App() {
             <Route path="lesson6" element={<Lesson6 />} />
             <Route path="lesson7" element={<Lesson7 />} />
             <Route path="lesson8" element={<Lesson8 />} />
-            <Route path="lesson9/*" element={<Lesson9 />}>
-              <Route path="homes" element={<Homes />} />
-              <Route path="about" element={<About />} />
-              <Route path="products" element={<Products />} />
-
-              <Route path="UrlParams" element={<UrlParams />}>
-                <Route path="homess" element={<Homess />} />
-                <Route path="abouts" element={<Abouts />} />
-                <Route path="productss" element={<Productss />} />
-                <Route path="productss/:id" element={<ProductDetails />} />
-              </Route>
-
-              <Route path="*" element={<NotFound />} />
-            </Route>
+            <Route path="lesson9/*" element={<Lesson9 />} />
 
             <Route path="*" element={<NoPage />} />
           </Route>

@@ -1,13 +1,9 @@
-// import { Route, Routes } from 'react-router-dom';
-// import { About } from './RouterPages/About';
 import { Homes } from './RouterPages/Homes';
-// import { Products } from './RouterPages/Products';
-// import { NotFound } from './RouterPages/NotFound';
 import { Container, Header, Logo, Link } from './RouteExampleComponents';
-import { Outlet } from 'react-router-dom';
-// import { About } from './RouterPages/About';
-// import { Products } from './RouterPages/Products';
-// import { NotFound } from './RouterPages/NotFound';
+import { Outlet, Route, Routes } from 'react-router-dom';
+import { About } from './RouterPages/About';
+import { Products } from './RouterPages/Products';
+import { NotFound } from './RouterPages/NotFound';
 
 export const RouteExample = () => {
   return (
@@ -20,20 +16,17 @@ export const RouteExample = () => {
           GoMerch Store
         </Logo>
         <nav>
-          <Link to="/homes" end>
-            Home
-          </Link>
-          <Link to="/about">About</Link>
-          <Link to="/products">Products</Link>
+          <Link to="lesson9/homes">Home</Link>
+          <Link to="lesson9/about">About</Link>
+          <Link to="lesson9/products">Products</Link>
         </nav>
       </Header>
-      <Homes />
-      {/* <Routes>
-        <Route path="/home" element={<Homes />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes> */}
+      <Routes>
+        <Route path="lesson9/homes" element={<Homes />} />
+        <Route path="lesson9/about" element={<About />} />
+        <Route path="lesson9/products" element={<Products />} />
+        <Route path="lesson9/*" element={<NotFound />} />
+      </Routes>
       <Outlet />
     </Container>
   );
