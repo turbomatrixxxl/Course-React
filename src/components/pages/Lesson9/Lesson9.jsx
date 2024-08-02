@@ -527,6 +527,7 @@ function Lesson9() {
         Aruncă o privire la codul de mai jos pentru crearea unui magazin online.
       </p>
 
+      <h4 style={{ color: 'red' }}>ImbricatedRoutes</h4>
       <ImbricatedRoutes />
 
       <h2>Rute indexate</h2>
@@ -610,6 +611,7 @@ function Lesson9() {
         indexată și ar trebui randată la aceeași adresă ca și părintele ei.
       </p>
 
+      <h4 style={{ color: 'red' }}>SharedLayouts</h4>
       <SharedLayouts />
     </div>
   );
