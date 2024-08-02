@@ -1,6 +1,7 @@
 import React from 'react';
 import { RouteExample } from './RouteExample/RouteExample';
 import { UrlParams } from './UrlParams/UrlParams';
+import { ImbricatedRoutes } from './ImbricatedRoutes/ImbricatedRoutesComponents/ImbricatedRoutes';
 
 import image1 from './images/image1.png';
 import image2 from './images/image2.png';
@@ -14,6 +15,11 @@ import image9 from './images/image9.png';
 import image10 from './images/image10.png';
 import image11 from './images/image11.png';
 import image12 from './images/image12.png';
+import image13 from './images/image13.png';
+import image14 from './images/image14.png';
+import image15 from './images/image15.png';
+import image16 from './images/image16.png';
+import { SharedLayouts } from './SharedLayout/SharedLayoutComponents/SharedLayouts';
 
 function Lesson9() {
   return (
@@ -520,6 +526,91 @@ function Lesson9() {
       <p>
         Aruncă o privire la codul de mai jos pentru crearea unui magazin online.
       </p>
+
+      <ImbricatedRoutes />
+
+      <h2>Rute indexate</h2>
+      <p>
+        După ce ne-am uitat peste rutele suprapuse, următoarea etapă este
+        tehnica <b>«shared layout»</b> care constă în faptul că unele markup-uri
+        HTML și stiluri comune întâlnite în diferite pagini din aplicație sunt
+        extrase într-o componentă separată, în loc să fie duplicate pe fiecare
+        pagină. În aplicația noastră, aceste secvențe repetitive sunt: header-ul
+        cu logo-ul magazinului și navbar-ul principal, precum și un container
+        care va limita lățimea conținutului de pe pagină.
+      </p>
+
+      <img
+        style={{
+          width: '100%',
+          height: 'fit-content',
+        }}
+        src={image13}
+        alt="Example"
+      />
+
+      <p>
+        Să mutăm acest markup și stilurile sale într-o componentă SharedLayout,
+        separată . Uită-te la cum și unde se folosește <b>Outlet</b> - aici va
+        fi randat markup-ul componentelor din această pagina.
+      </p>
+
+      <img
+        style={{
+          width: '100%',
+          height: 'fit-content',
+        }}
+        src={image14}
+        alt="Example"
+      />
+
+      <p>
+        Apoi, folosim această componentă în <b>App</b> , astfel încât să fie
+        randată pe orice rută. Pentru a face acest lucru, îl vom randa în{' '}
+        <b>/</b> și vom face toate celelalte rute suprapuse în el, așa că vom
+        schimba <b>path</b>-ul tuturor rutelor suprapuse, în raport cu
+        părintele.
+      </p>
+
+      <img
+        style={{
+          width: '100%',
+          height: 'fit-content',
+        }}
+        src={image15}
+        alt="Example"
+      />
+
+      <p>
+        Este posibil să te întrebi unde a dispărut componenta <b>Home</b> care
+        anterior era pe <b>path="/"</b>. Problema este că acum, pentru{' '}
+        <b>/about</b>, se va executa render la <b>SharedLayout</b> și{' '}
+        <b>About</b>, iar pentru <b>/</b> doar <b>SharedLayout</b>. Pentru a
+        randa componenta <b>Home</b> la aceeași rută ca și părintele ei, trebuie
+        să creăm o <b>«rută indexată»</b>.
+      </p>
+
+      <img
+        style={{
+          width: '100%',
+          height: 'fit-content',
+        }}
+        src={image16}
+        alt="Example"
+      />
+
+      <p style={{ color: 'red' }}>
+        <b>Cum funcționează?</b>
+      </p>
+
+      <p>
+        Numai o rută suprapusă poate fi indexată. În Route nu se specifică
+        prop-ul path, deoarece se potrivește cu valoarea path de la părinte. În
+        schimb, este transmis index care îi spune lui React Router că ruta este
+        indexată și ar trebui randată la aceeași adresă ca și părintele ei.
+      </p>
+
+      <SharedLayouts />
     </div>
   );
 }
