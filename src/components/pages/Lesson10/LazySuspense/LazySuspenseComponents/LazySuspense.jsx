@@ -11,25 +11,25 @@ import { SharedLayout } from './SharedLayout';
 // import { Reviews } from './Reviews';
 
 const About = lazy(() => import('../pages/About'));
-console.log(About);
+// console.log(About);
 
 const Home = lazy(() => import('../pages/Home'));
-console.log(Home);
+// console.log(Home);
 
 const ProductDetails = lazy(() => import('../pages/ProductDetails'));
-console.log(ProductDetails);
+// console.log(ProductDetails);
 
 const Products = lazy(() => import('../pages/Products'));
-console.log(Products);
+// console.log(Products);
 
 const Mission = lazy(() => import('./Mission'));
-console.log(Mission);
+// console.log(Mission);
 
 const Team = lazy(() => import('./Team'));
-console.log(Team);
+// console.log(Team);
 
 const Reviews = lazy(() => import('./Reviews'));
-console.log(Reviews);
+// console.log(Reviews);
 
 export const LazySuspense = () => {
   return (

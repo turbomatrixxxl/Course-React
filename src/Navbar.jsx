@@ -65,7 +65,7 @@ function Navbar() {
           <Link to="/lesson10">Routing/partea 2</Link>
         </li>
         <li>
-          <Link to="/lesson11">Lesson11</Link>
+          <Link to="/lesson11">Bazele Redux</Link>
         </li>
         <li>
           <Link to="/lesson12">Lesson12</Link>
