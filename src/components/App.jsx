@@ -19,6 +19,7 @@ import Lesson11 from './pages/Lesson11';
 
 import logo from '../logo.svg';
 import './App.css';
+import Lesson12 from './pages/Lesson12';
 
 function App() {
   const mainStyles = {
@@ -60,6 +61,7 @@ function App() {
             <Route path="lesson9/*" element={<Lesson9 />} />
             <Route path="lesson10/*" element={<Lesson10 />} />
             <Route path="lesson11/*" element={<Lesson11 />} />
+            <Route path="lesson12/*" element={<Lesson12 />} />
 
             <Route path="*" element={<NoPage />} />
           </Route>

@@ -68,7 +68,7 @@ function Navbar() {
           <Link to="/lesson11">Bazele Redux</Link>
         </li>
         <li>
-          <Link to="/lesson12">Lesson12</Link>
+          <Link to="/lesson12">Redux Toolkit</Link>
         </li>
         <li>
           <Link to="/lesson13">Lesson13</Link>
