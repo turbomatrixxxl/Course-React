@@ -74,7 +74,7 @@ function Navbar() {
           <Link to="/lesson13">Async Redux</Link>
         </li>
         <li>
-          <Link to="/lesson14">Lesson14</Link>
+          <Link to="/lesson14">Users Accounts</Link>
         </li>
         <li>
           <Link to="/lesson15">Lesson15</Link>
