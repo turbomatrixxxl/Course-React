@@ -74,16 +74,13 @@ function Navbar() {
           <Link to="/lesson13">Async Redux</Link>
         </li>
         <li>
-          <Link to="/lesson14">Users Accounts</Link>
+          <Link to="/lesson14">Optimizarea selectorilor</Link>
         </li>
         <li>
-          <Link to="/lesson15">Lesson15</Link>
+          <Link to="/lesson15">Users Accounts</Link>
         </li>
         <li>
-          <Link to="/lesson16">Lesson16</Link>
-        </li>
-        <li>
-          <Link to="/lesson17">Lesson17</Link>
+          <Link to="/lesson16">Portals</Link>
         </li>
       </ol>
     </nav>

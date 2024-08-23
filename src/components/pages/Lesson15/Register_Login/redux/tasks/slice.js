@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { logOut } from '../../redux/auth/operations';
+import { logOut } from '../auth/operations';
 import { fetchTasks, addTask, deleteTask } from './operations';
 
 const handlePending = state => {

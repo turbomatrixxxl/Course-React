@@ -18,10 +18,12 @@ import Lesson10 from './pages/Lesson10';
 import Lesson11 from './pages/Lesson11';
 import Lesson12 from './pages/Lesson12';
 import Lesson13 from './pages/Lesson13';
+import Lesson14 from './pages/Lesson14';
+import Lesson15 from './pages/Lesson15/Lesson15';
+import Lesson16 from './pages/Lesson16';
 
 import logo from '../logo.svg';
 import './App.css';
-import Lesson14 from './pages/Lesson14';
 
 function App() {
   const mainStyles = {
@@ -66,6 +68,8 @@ function App() {
             <Route path="lesson12/*" element={<Lesson12 />} />
             <Route path="lesson13/*" element={<Lesson13 />} />
             <Route path="lesson14/*" element={<Lesson14 />} />
+            <Route path="lesson15/*" element={<Lesson15 />} />
+            <Route path="lesson16" element={<Lesson16 />} />
 
             <Route path="*" element={<NoPage />} />
           </Route>
